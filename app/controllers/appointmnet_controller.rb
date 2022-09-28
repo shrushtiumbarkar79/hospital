@@ -9,11 +9,11 @@ class AppointmnetController < ApplicationController
 			render json: {message: "something wrong"}
 		end
 	end
-	# def show
-	# 	@data = Appointment.find(params[:id])
- #            render json: (@data), status: :ok 
+	def show
+		@data = Appointment.find(params[:id])
+            render json: (@data), status: :ok 
         
- #    end
+    end
 
 	
 																																				
