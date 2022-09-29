@@ -14,10 +14,10 @@ class PatientController < ApplicationController
 
 
 
-	# def show
-	# 	@data = Patient.find(params[:id])
- #            render json: (@data), status: :ok 
+	def show
+		@data = Patient.find(params[:id])
+            render json: (@data), status: :ok 
         
- #    end
+    end
 
 end
